@@ -1,9 +1,9 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const Ride = require('../src/models/Ride');
-const rideQueue = require('../src/queues/rideQueue');
-const { publishEvent } = require('../src/publishers/eventPublisher');
-const DRIVERS = require('../src/data/drivers');
+const Ride = require('../models/Ride');
+const rideQueue = require('../queues/rideQueue');
+const { publishEvent } = require('../publishers/eventPublisher');
+const DRIVERS = require('../data/drivers');
 
 const MAX_REJECTIONS = 3;
 
